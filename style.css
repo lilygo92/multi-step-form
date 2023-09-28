@@ -10,12 +10,16 @@
   justify-content: space-evenly;
   align-items: center;
   font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .sidebar {
   width: 29.4%;
   height: 94.6%;
-  border: solid 3px black;
+  border: solid 5px white;
+  border-radius: 20px;
+  background-image: url(assets/images/bg-sidebar-desktop.svg);
+  background-size: cover;
 }
 
 .form-section {
@@ -26,8 +30,10 @@
 
 ol {
   list-style: none; 
+  list-style-position: decimal;
   padding: 12% 5.6%;
-  font-size: 2rem;
+  font-size: 1rem;
+  color: white;
 }
 
 ol li {
@@ -41,12 +47,21 @@ ol li {
 ol li::before {
   content: counter(list-counter); 
   font-weight: bold; 
-  border: 2px solid #000; 
+  border: 1px solid white; 
   border-radius: 50%; 
-  padding: 5px 15px; 
+  padding: 10px 17px 5px 17px; 
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 .step {
   display: flex;
   flex-direction: column;
+  padding-left: 20px;
+}
+
+.step-description {
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding-top: 3px;
 }
