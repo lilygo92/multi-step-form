@@ -22,12 +22,6 @@
   background-size: cover;
 }
 
-.form-section {
-  width: 66.4%;
-  height: 94.6%;
-  border: solid 3px black;
-}
-
 ol {
   list-style: none; 
   list-style-position: decimal;
@@ -64,4 +58,55 @@ ol li::before {
   font-size: 1.25rem;
   font-weight: 700;
   padding-top: 3px;
+}
+
+.form-section {
+  width: 66.4%;
+  height: 94.6%;
+  display: flex;
+  justify-content: center;
+}
+
+#personal-info {
+  width: 74%;
+  padding-top: 34px;
+  padding-bottom: 15px;
+  color: hsl(213, 96%, 18%);
+}
+
+#personal-info h1 {
+  margin-bottom: -5px;
+}
+
+#personal-info p {
+  color: grey;
+}
+
+#personal-info .input-section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+#personal-info label {
+  padding-bottom: 7px;
+}
+
+#personal-info input {
+  margin-bottom: 20px;
+  padding: 13px;
+  border: lightgray solid 1px;
+  border-radius: 10px;
+}
+
+.next-button {
+  position: absolute;
+  bottom: 5%;
+  right: 9.8%;
+  background-color: hsl(213, 96%, 18%);
+  color: white;
+  padding: 14px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
 }
