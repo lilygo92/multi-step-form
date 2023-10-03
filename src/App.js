@@ -3,6 +3,7 @@ import Sidebar from './components/Sidebar';
 import PersonalInfo from './components/forms/PersonalInfo';
 import Description from './components/forms/Description';
 import Button from './components/forms/Button';
+import SelectPlan from './components/forms/SelectPlan';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <div className="form-section">
         <div id="personal-info">
           <Description/>
-          <PersonalInfo/>
+          {/* <PersonalInfo/> */}
+          <SelectPlan/>
           <Button/>  
         </div>
       </div>

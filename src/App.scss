@@ -2,7 +2,9 @@
 
 .container {
   width: 65.3%;
+  max-width: 940px;
   height: 74.1%;
+  max-height: 600px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -112,3 +114,79 @@ ol li::before {
   cursor: pointer;
   font-weight: 500;
 }
+
+.form {
+  &--select-plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 42px;
+    margin-bottom: 26px;
+  }
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  width: 30.11%;
+
+  svg {
+    padding: 20px 15px 45px 15px;
+  }
+
+  span {
+    padding-left: 15px;
+    padding-bottom: 5px;
+
+    &.plan-name {
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    &.plan-price {
+      padding-bottom: 18px;
+      color: grey;
+    }
+  }
+}
+
+.plan-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(217, 100%, 97%);
+  height: 50px;
+  border-radius: 10px;
+
+  &--text {
+    width: 40%;
+    min-width: 180px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  span {
+    font-weight: 500;
+  }
+
+  .toggle-switch {
+    width: 40px;
+    height: 20px;
+    background-color: hsl(213, 96%, 18%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .toggle-button {
+    width: 13px;
+    height: 13px;
+    margin-left: 3px;
+    margin-right: 3px;
+    background-color: white;
+    border-radius: 50%;
+  }
+}
+
