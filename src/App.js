@@ -15,8 +15,8 @@ function App() {
         <div id="personal-info">
           <Description/>
           {/* <PersonalInfo/> */}
-          {/* <SelectPlan/> */}
-          <AddOns />
+          <SelectPlan/>
+          {/* <AddOns /> */}
           <Button/>  
         </div>
       </div>
