@@ -2,7 +2,7 @@ import React from "react";
 
 export default function PersonalInfo() {
   return (
-    <form className="input-section">
+    <form className="form--personal-info">
       <label for="name">Name</label>
       <input type="text" id="name" className="name" placeholder="e.g. Stephen King"/>
 

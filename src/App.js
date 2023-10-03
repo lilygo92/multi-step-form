@@ -14,8 +14,8 @@ function App() {
       <div className="form-section">
         <div id="personal-info">
           <Description/>
-          {/* <PersonalInfo/> */}
-          <SelectPlan/>
+          <PersonalInfo/>
+          {/* <SelectPlan/> */}
           {/* <AddOns /> */}
           <Button/>  
         </div>

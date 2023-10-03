@@ -86,23 +86,6 @@ ol li::before {
   color: grey;
 }
 
-#personal-info .input-section {
-  display: flex;
-  flex-direction: column;
-  padding-top: 30px;
-}
-
-#personal-info label {
-  padding-bottom: 7px;
-}
-
-#personal-info input {
-  margin-bottom: 20px;
-  padding: 13px;
-  border: lightgray solid 1px;
-  border-radius: 10px;
-}
-
 .next-button {
   position: absolute;
   bottom: 5%;
@@ -116,6 +99,23 @@ ol li::before {
 }
 
 .form {
+  &--personal-info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+
+    label {
+      padding-bottom: 7px;
+    }
+
+    input {
+      margin-bottom: 20px;
+      padding: 13px;
+      border: lightgray solid 1px;
+      border-radius: 10px;
+    }
+  }
+
   &--select-plan {
     display: flex;
     flex-direction: row;
