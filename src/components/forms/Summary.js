@@ -4,44 +4,30 @@ export default function Summary() {
   return (
     <>
       <div className="form--summary">
+
         <div className="summary">
           <div className="summary--plan">
-            <span className="summary--plan_type">
-              Arcade (Monthly)
-            </span>
-            <span className="summary--plan_change">
-              Change
-            </span>
+            <div className="summary--plan_description">
+              <span className="summary--plan_description--type">Arcade (Monthly)</span>
+              <span className="summary--plan_description--change">Change</span>
+            </div>
+            <span className="summary--plan_price">$9/mo</span>
           </div>
-          <span className="summary--plan_price">
-            $9/mo
-          </span>
-        </div>
-        <div className="summary">
-          <div className="summary--add-on">
-            <span className="summary--add-on_type">
-              Online service
-            </span>
-            <span className="summary--add-on_price">
-              +$1/mo
-            </span>
+          <div className="summary--add-ons">
+            <div className="summary--add-ons_item">
+              <span className="summary--add-ons_item--type">Online service</span>
+              <span className="summary--add-ons_item--price">+$1/mo</span>
+            </div>
+            <div className="summary--add-ons_item">
+              <span className="summary--add-ons_item--type">Larger storage</span>
+              <span className="summary--add-ons_item--price">+$2/mo</span>
+            </div>
           </div>
-          <div className="summary--add-on">
-            <span className="summary--add-on_type">
-              Larger storage
-            </span>
-            <span className="summary--add-on_price">
-              +$2/mo
-            </span>
-          </div>
+
         </div>
         <div className="summary--total">
-          <span className="summary--total_text">
-            Total (per month)
-          </span>
-          <span className="summary--total_price">
-            +$12/mo
-          </span>
+          <span className="summary--total_text">Total (per month)</span>
+          <span className="summary--total_price">+$12/mo</span>
         </div>
       </div>
     </>

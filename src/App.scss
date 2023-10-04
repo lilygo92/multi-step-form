@@ -25,6 +25,13 @@ body {
   font-size: 16px;
 }
 
+.form-section {
+  width: 66.4%;
+  height: 97.6%;
+  display: flex;
+  justify-content: center;
+}
+
 .sidebar {
   width: 29.4%;
   height: 94.6%;
@@ -77,26 +84,19 @@ body {
   }
 }
 
-.form-section {
-  width: 66.4%;
-  height: 97.6%;
-  display: flex;
-  justify-content: center;
-}
-
 #personal-info {
   width: 74%;
   padding-top: 34px;
   padding-bottom: 15px;
   color: hsl(213, 96%, 18%);
-}
 
-#personal-info h1 {
-  margin-bottom: -5px;
-}
+  h1 {
+    margin-bottom: -5px;
+  }
 
-#personal-info p {
-  color: grey;
+  p {
+    color: grey;
+  }
 }
 
 .next-button {
@@ -209,6 +209,85 @@ body {
 
       &--price {
         margin: 20px 20px 20px 0;
+      }
+    }
+  }
+
+  &--summary  {
+    margin-top: 40px;
+
+    .summary {
+      background-color: hsl(217, 100%, 97%);
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 10px;
+
+      &--plan {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid 1px lightgray;
+        width: 90%;
+
+        &_description {
+          display: flex;
+          flex-direction: column;
+          margin: 20px 0;
+
+          &--type {
+            font-weight: 500;
+            margin-bottom: 5px;
+          }
+
+          &--change {
+            font-size: 0.9rem;
+            color: gray;
+            text-decoration: underline;
+          }
+        }
+
+        &_price {
+          font-weight: 700;
+        }
+      }
+
+      &--add-ons {
+        width: 90%;
+        margin-bottom: 20px;
+
+        &_item {
+          display: flex;
+          justify-content: space-between;
+
+          &--type {
+            color: gray;
+          }
+
+          span {
+            margin-top: 20px;
+            font-size: 0.9rem;
+          }
+        }
+      }
+
+      &--total {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        width: 90%;
+        margin-left: 5%;
+
+        &_text {
+          font-size: 0.9rem;
+          color: gray;
+        }
+
+        &_price {
+          font-size: 1.1rem;
+          font-weight: 700;
+          color: hsl(243, 100%, 62%);
+        }
       }
     }
   }
