@@ -1,5 +1,4 @@
 import React from "react";
-import MultiStepForm from "./forms/MultiStepForm";
 
 export default function Sidebar(props) {
 
