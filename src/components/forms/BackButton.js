@@ -1,11 +1,9 @@
 import React from "react";
-import MultiStepForm from "./MultiStepForm";
 
-export default function BackButton() {
-  const { stepIndex, back, next, goTo} = MultiStepForm();
-  
+export default function BackButton(props) {
+
   return (
-    <div onClick={back} className="back-button">
+    <div onClick={props.onClick} className="back-button">
       Go Back
     </div>
   )

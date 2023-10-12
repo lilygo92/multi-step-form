@@ -1,10 +1,8 @@
 import React from "react";
-import MultiStepForm from "./MultiStepForm";
 
-export default function Button() {
-  const { stepIndex, back, next, goTo} = MultiStepForm();
+export default function Button(props) {
 
   return(
-    <div onClick={next} className="next-button">Next Step</div>
+    <div onClick={props.onClick} className="next-button">Next Step</div>
   )
 }
