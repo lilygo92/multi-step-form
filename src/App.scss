@@ -111,6 +111,14 @@ body {
   font-weight: 500;
 }
 
+.back-button {
+  position: absolute;
+  bottom: 7.8%;
+  left: 40%;
+  font-weight: 500;
+  color: grey;
+  cursor: pointer;
+}
 .form {
   &--personal-info {
     display: flex;

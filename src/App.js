@@ -6,6 +6,7 @@ import PersonalInfo from './components/forms/PersonalInfo';
 import SelectPlan from './components/forms/SelectPlan';
 import AddOns from './components/forms/AddOns';
 import Summary from './components/forms/Summary';
+import BackButton from './components/forms/BackButton';
 
 function App() {
   return (
@@ -15,11 +16,14 @@ function App() {
       <div className="form-section">
         <div id="personal-info">
           <Description/>
-          {/* <PersonalInfo/> */}
+          <PersonalInfo/>
           {/* <SelectPlan/> */}
           {/* <AddOns /> */}
-          <Summary />
+          {/* <Summary /> */}
+          <BackButton/>
           <Button/>  
+
+          
         </div>
       </div>
     </div>
