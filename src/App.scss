@@ -174,8 +174,14 @@ body {
     
       &--price {
         padding-left: 15px;
-        padding-bottom: 18px;
+        padding-bottom: 5px;
         color: grey;
+      }
+
+      &--annual-savings {
+        padding-left: 15px;
+        padding-bottom: 18px;
+        font-size: 0.9rem;
       }
     }
   }
