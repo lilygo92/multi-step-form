@@ -322,13 +322,25 @@ body {
     font-weight: 500;
   }
 
-  .toggle-switch {
+  .monthly {
     width: 40px;
     height: 20px;
     background-color: hsl(213, 96%, 18%);
     border-radius: 10px;
     display: flex;
     align-items: center;
+    cursor: pointer;
+  }
+
+  .yearly {
+    width: 40px;
+    height: 20px;
+    background-color: hsl(213, 96%, 18%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
   }
 
   .toggle-button {
